@@ -12,6 +12,7 @@
 		14D1C5D1216795F300D9EB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D1C5CF216795F300D9EB1C /* Main.storyboard */; };
 		14D1C5D3216795F400D9EB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D1C5D2216795F400D9EB1C /* Assets.xcassets */; };
 		14D1C5D6216795F400D9EB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14D1C5D4216795F400D9EB1C /* LaunchScreen.storyboard */; };
+		A045C34CE86FFFD2FCDE449C /* Pods_BitcoinPriceTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E469AAC02BEBEE04B9418EC /* Pods_BitcoinPriceTracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		14D1C5D2216795F400D9EB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14D1C5D5216795F400D9EB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14D1C5D7216795F400D9EB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B647F78EDFC6571D04FD835 /* Pods-BitcoinPriceTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinPriceTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinPriceTracker/Pods-BitcoinPriceTracker.release.xcconfig"; sourceTree = "<group>"; };
+		3D3649F2CF610AC8D59B69D3 /* Pods-BitcoinPriceTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitcoinPriceTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitcoinPriceTracker/Pods-BitcoinPriceTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		5E469AAC02BEBEE04B9418EC /* Pods_BitcoinPriceTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitcoinPriceTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A045C34CE86FFFD2FCDE449C /* Pods_BitcoinPriceTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				14D1C5CA216795F300D9EB1C /* BitcoinPriceTracker */,
 				14D1C5C9216795F300D9EB1C /* Products */,
+				A80F8BC5B8D4E57346763FAC /* Pods */,
+				E5015F9006D4163A76F52175 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = BitcoinPriceTracker;
 			sourceTree = "<group>";
 		};
+		A80F8BC5B8D4E57346763FAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3D3649F2CF610AC8D59B69D3 /* Pods-BitcoinPriceTracker.debug.xcconfig */,
+				1B647F78EDFC6571D04FD835 /* Pods-BitcoinPriceTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5015F9006D4163A76F52175 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E469AAC02BEBEE04B9418EC /* Pods_BitcoinPriceTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14D1C5DA216795F400D9EB1C /* Build configuration list for PBXNativeTarget "BitcoinPriceTracker" */;
 			buildPhases = (
+				51A6BBE0CB97AFD1957E6E05 /* [CP] Check Pods Manifest.lock */,
 				14D1C5C4216795F300D9EB1C /* Sources */,
 				14D1C5C5216795F300D9EB1C /* Frameworks */,
 				14D1C5C6216795F300D9EB1C /* Resources */,
+				FA9E0CD19546F2F6884493F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51A6BBE0CB97AFD1957E6E05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitcoinPriceTracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA9E0CD19546F2F6884493F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinPriceTracker/Pods-BitcoinPriceTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitcoinPriceTracker/Pods-BitcoinPriceTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14D1C5C4216795F300D9EB1C /* Sources */ = {
@@ -280,11 +357,13 @@
 		};
 		14D1C5DB216795F400D9EB1C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3649F2CF610AC8D59B69D3 /* Pods-BitcoinPriceTracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FTSDJRAZR8;
 				INFOPLIST_FILE = BitcoinPriceTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +371,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fg.BitcoinPriceTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		14D1C5DC216795F400D9EB1C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B647F78EDFC6571D04FD835 /* Pods-BitcoinPriceTracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FTSDJRAZR8;
 				INFOPLIST_FILE = BitcoinPriceTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +391,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fg.BitcoinPriceTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
